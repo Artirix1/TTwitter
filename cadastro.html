@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <nav>
+        <a href="cadastro.html">Home</a> | 
+        <a href="login.html">Sobre Mim</a>
+    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="icon" sizes="32x32" type="image/png" href="./Imagens/ejcmLogo.png" />
+
+    <title>Cadastro TTwitter</title>
+  
+    <link rel="stylesheet" href="sytles.css">
+  </head>
+  <body>
+    <main class="telaCadastro">
+        <div class="textContainer">
+          <h1>Cadastro</h1>
+          <fiel action="" method="post">
+            <label for="name"> Nome</label>
+            <input type="text" id="name" name="name" placeholder="nome de usuário" required />
+            
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+            
+            <label for="dataNascimento"> Data de Nascimento</label>
+            <input type="text" id="dataNascimento" name="dataNascimento" placeholder="xx/xx/xxxx" required/>
+            
+            <label for="senha"> Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="•••••••••" required/>
+            
+            <label for="confimarSenha"> Confirmar senha</label>
+            <input type="password" id="confimarSenha" name="confimarSenha" placeholder="•••••••••" required/>
+
+
+            <input type="checkbox" id="termosDeUso" name="termosDeUso" required>
+            <label for="termosDeUso">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições de uso</a></label>
+
+            <button>Cadastrar</button>
+
+          </form>
+        </div>
+    </main>
+    <div class="logo">
+
+    </div>
+  </body>
+</html>
