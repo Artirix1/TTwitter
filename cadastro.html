@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link rel="icon"  type="image/png" href="Imagens/ejcmLogo.png"/>
 
     <title>Cadastro TTwitter</title>
@@ -12,43 +16,49 @@
   </head>
 
   <body>
-    <main class="telaCadastro">
+    <div class="logo">
+      <img src="Imagens/Logo TT.png" alt="Logo do TTwitter"/>
+    </div>
+    <main class="boxCadastro">
         <div class="textContainer">
           <h1>Cadastro</h1>
-          <form action="" method="post">
-            <label for="name"> Nome</label>
-            <input type="text" id="name" name="name" placeholder="nome de usuário" required />
-       
+          <form class="formulario" action="" method="post">
+            <div class="nameInput">
+              <label for="name"> Nome</label>
+              <input type="text" id="name" name="name" placeholder="nome de usuário" required /> <br>
+            </div>
 
-            <label for="email"> Email</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+            <div class="emailInput">
+              <label for="email"> Email</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required /> <br>
+            </div>
             
-
-            <label for="dataNascimento"> Data de Nascimento</label>
-            <input type="text" id="dataNascimento" name="dataNascimento" placeholder="xx/xx/xxxx" required/>
+            <div class="dataNascimentoInput">
+              <label for="dataNascimento"> Data de Nascimento</label>
+              <input type="text" id="dataNascimento" name="dataNascimento" placeholder="xx/xx/xxxx" required/> <br>
+            </div>
             
-
-            <label for="senha"> Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="•••••••••" required/>
+            <div class="senhaInput">
+              <label for="senha"> Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="•••••••••" required/> <br>
+            </div>
             
-
-            <label for="confimarSenha"> Confirmar senha</label>
-            <input type="password" id="confimarSenha" name="confimarSenha" placeholder="•••••••••" required/>
+            <div class="confirmarSenhaInput">
+              <label for="confirmarSenha"> Confirmar senha</label>
+              <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="•••••••••" required/> <br>
+            </div>
             
+            <div class="termosDeUsoInput">
+              <input type="checkbox" id="termosDeUso" name="termosDeUso" required>
+              <label for="termosDeUso">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições de uso</a></label> <br>
+            </div>
 
-            <input type="checkbox" id="termosDeUso" name="termosDeUso" required>
-            <label for="termosDeUso">Li e estou de acordo com os <a href="">Termos</a> e <a href="">Condições de uso</a></label>
-           
-
-            <button>Cadastrar</button>
+            <button class="botaoCadastro">Cadastrar</button>
 
           </form>
-          <a href="login.html" class="botaoDeLogin">Fazer Login</a>
+          <a href="login.html" class="botaoLogin">Fazer Login</a>
 
         </div>
     </main>
-    <div class="logo">
-      
-    </div>
   </body>
 </html>
