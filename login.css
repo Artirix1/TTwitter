@@ -9,12 +9,12 @@ body{
     gap: 21px;
 }
 
-.boxCadastro{
+.boxLogin{
     background-color: #F4F4F4;
     border-radius: 18px;
     width: 90%;
     max-width: 450px;
-    height: 78%;
+    height: 60%;
     @media (orientation: landscape) {
         height: 74%;
     };
@@ -27,23 +27,22 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #F4F4F4;
-    gap: 27px;
+    gap: 38px;
     width: 270px;
-    height: 500px;    
-    margin-top: 24px;
+    height: 200px;    
 }
 
 .textContainer{
     font-family: Inter;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
     text-align: center;    
 }
 
-.botaoCadastro{
+.botaoEntrar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,12 +51,12 @@ body{
     color: #FFFFFF;
     
     width: 80%;
-    height: 8.5%;
+    height: 10%;
     border-radius: 8px;
     gap: 10px;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     padding-left: 20px;
     
     font-family: Inter;
@@ -65,18 +64,21 @@ body{
     font-size: 16px;
 
     border: none;
+
 }
 
 .textContainer h1{
+    position: relative;
+    top: 10px;
     color: #222222;
     margin-bottom: 0;
     margin-top: 0;
+    
     font-size: 20px;
     line-height: 100%;
-    
 }
 
-.botaoLogin{
+.botaoRegistrar{
     color: #105F74;
     font-family: Inter;
     font-weight: bold;
@@ -114,11 +116,9 @@ input::placeholder{
     font-size: 15px;
     line-height: 24px;
     letter-spacing: 0%;
-
 }
 
-.nameInput, .emailInput, .dataNascimentoInput, 
-.senhaInput, .confirmarSenhaInput {
+.emailInput, .senhaInput{
     position: relative;
 }
 
@@ -126,17 +126,20 @@ input:focus{
     outline: none;
 }
 
-.termosDeUsoInput input{
-    margin: 0;
-    width: auto;
-}
-
-.termosDeUsoInput label{
-    position: static;
-    vertical-align: 1.1em;
+.termosDeUso {
+    width: 90%;
+    position: relative;
+    font-size: 12px;
+    line-height: 24px;
+    vertical-align: middle;
+    top: 30px;
 }
 
 .logo img{
+    position: absolute;
     width: 80px;
+    height: 83px;
+    top: 26px;
+    left: 140px;
 
 }
