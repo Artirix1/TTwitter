@@ -13,3 +13,7 @@ body {
     min-height: 100vh;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
