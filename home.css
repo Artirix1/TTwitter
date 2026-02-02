@@ -113,6 +113,7 @@ input {
     margin-bottom: 20px;       
     border: 1px solid #484848;
     width: 85%;
+    
 }
 
 .criarPublicacao{
@@ -171,4 +172,72 @@ input {
 
 .botaoPostar:hover {
     background-color: #1A8CD8; 
+}
+
+/* sessão post */
+
+.feed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publicacaoImageContainer {
+    background-color: #181B24;
+    border-radius: 10px;   
+    padding: 40px;  
+    margin-bottom: 20px;       
+    border: 1px solid #484848;
+    width: 85%;
+}
+
+.imagePostContainer {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.imagePost {
+    width: 100%;       
+    height: auto;     
+    display: block;    
+    object-fit: cover,
+}
+
+.descricaoPost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px; 
+}
+
+.descricaoUsuario {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fotoPerfilPequena {
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.interacoes {
+    display: flex;
+    gap: 8px;
+}
+
+.interacoes img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.textoPost {
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 100%;
+    font-weight: 400;
 }
