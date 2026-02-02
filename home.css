@@ -13,6 +13,8 @@ body {
     min-height: 100vh;
 }
 
+/* Header*/
+
 input:focus, textarea:focus {
     outline: none;
 }
@@ -41,7 +43,6 @@ input:focus, textarea:focus {
     max-width: 400px;
 }
 
-
 input {
     width: 100%;
     background-color: #202327;
@@ -61,6 +62,8 @@ input {
     width: 24px;
 }
 
+/* sessão de recomendados*/
+
 .recomendados {
     padding: 20px 20px 10px 20px; 
     width: 100%;
@@ -72,7 +75,6 @@ input {
     margin-bottom: 12px; 
     font-weight: 400; 
 }
-
 
 .listaPerfis {
     display: flex;
@@ -100,4 +102,73 @@ input {
     font-size: 14px;
     color: #FFFFFF;
     font-weight: 400;
+}
+
+/* sessão de publicação */
+
+.publicacaoContainer {
+    background-color: #181B24;
+    border-radius: 10px;   
+    padding: 16px;  
+    margin-bottom: 20px;       
+    border: 1px solid #484848;
+    width: 85%;
+}
+
+.criarPublicacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.criarPublicacao textarea {
+    width: 100%;
+    background: transparent;   
+    border: none;             
+    color: #FFFFFF;          
+    font-size: 12px;                      
+    font-family: Inter;
+    font-weight: 400;
+    margin-bottom: 20px;      
+}
+
+.criarPublicacao ::placeholder {
+    color: #FFFFFF;
+}
+
+.inferiorPublicacao {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+}
+
+.iconesPublicacao {
+    display: flex;
+    gap: 11px; 
+}
+
+.iconesPublicacao img {
+    width: 20px;  
+    height: 20px;
+    cursor: pointer;
+}
+
+.iconesPublicacao img:hover {
+    opacity: 1; 
+}
+
+.botaoPostar {
+    background-color: #22A2F2; 
+    color: black;
+    border: none;
+    border-radius: 10px; 
+    padding: 8px 20px;
+    font-weight: 600;  
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botaoPostar:hover {
+    background-color: #1A8CD8; 
 }
