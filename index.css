@@ -133,7 +133,8 @@ input {
     font-size: 12px;                      
     font-family: Inter;
     font-weight: 400;
-    margin-bottom: 20px;      
+    margin-bottom: 20px;
+    resize: none;      
 }
 
 .criarPublicacao ::placeholder {
