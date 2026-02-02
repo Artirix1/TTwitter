@@ -49,7 +49,7 @@ input:focus, textarea:focus {
 input {
     width: 100%;
     background-color: #202327;
-    color: #484848;
+    color: white;
     border: none;
     border-radius: 25px; 
     padding: 10px 15px;
@@ -305,10 +305,28 @@ input {
     .header {
         grid-area: header;
         position: sticky; 
+        justify-content: flex-start;
+        gap: 81px;
+        padding: 15px 40px;
+    }
+
+    .barraDeBusca {
+        flex: 1;     
+        width: auto;
+    }
+
+    .barraDeBusca input{
+        width: 100%;
     }
 
     .menuNavegacao {
         grid-area: nav;
+        position: sticky; 
+        top: 80px;     
+        height: fit-content;
+        width: 100%;
+        padding-top: 20px;
+        background-color: transparent;
     }
 
     .feedContainer {
@@ -318,4 +336,68 @@ input {
         gap: 30px;
         align-items: start; 
     }
+
+    .listaMenu {
+        flex-direction: column;
+        gap: 30px; 
+    }
+
+    .recomendados {
+        grid-column: 2; 
+        grid-row: 1 / 10;
+        
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .invite{
+        color: #22A2F2;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        background-color: #222222;
+        border-radius: 15px;
+        padding: 10px;
+        border: none;
+    }
+
+    .invite:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .criarPublicacao, .feed {
+        grid-column: 1; 
+    }
+
+    .recomendados h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .listaPerfis {
+        flex-direction: column;
+        gap: 15px;
+        overflow: visible;
+    }
+
+    .itemListaPerfil {
+        flex-direction: row; 
+        align-items: center;
+        width: 100%;
+        justify-content: space-between; 
+    }
+
+    .fotoPerfil {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 0; 
+        margin-right: 12px; 
+    }
+
+    .nomeUsuario {
+        font-size: 14px;
+        margin-right: auto;
+    }
+
 }
