@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="Imagens/ejcmLogo.png" />
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Imagens/Logo TT.png" alt="Logo do TTwitter">
+        </div>
+
+        <div class="barraDeBusca">
+            <input id="pesquisa" name="pesquisa" type="search" placeholder="Buscar" aria-label="Barra de busca do TTwiter">
+            <img src="Imagens/lupaIcon.png" class="lupaIcon" alt="Icone de pesquisa">
+        </div>
+    </header>
+
+    <main class="feedContainer">
+        <section class="recomendados">
+            <h2>Talvez você conheça</h2>
+
+            <ul class="listaPerfis">
+                <li class="itemListaPerfil">
+                    <div class="fotoPerfil"></div>
+                    <p class="nomeUsuario">@usuário</p>
+                    <p class="invite">Adicionar</p>
+                </li>
+                <li class="itemListaPerfil">
+                    <div class="fotoPerfil"></div>
+                    <p class="nomeUsuario">@usuário</p>
+                    <p class="invite">Adicionar</p>
+                </li>
+                <li class="itemListaPerfil">
+                    <div class="fotoPerfil"></div>
+                    <p class="nomeUsuario">@usuário</p>
+                    <p class="invite">Adicionar</p>
+                </li>
+                <li class="itemListaPerfil">
+                    <div class="fotoPerfil"></div>
+                    <p class="nomeUsuario">@usuário</p>
+                    <button type="button" class="invite">Adicionar</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="criarPublicacao">
+            <div class="publicacaoContainer">
+                <form>
+                    <textarea name="textoPublicacao" id="textoPublicacao"
+                        placeholder="No que está pensando...?"></textarea>
+                    <div class="inferiorPublicacao">
+                        <div class="iconesPublicacao">
+                            <img src="Imagens/pictureIcon.png" alt="Adicionar imagem">
+                            <img src="Imagens/carinhaIcon.png" alt="Adicionar emoji">
+                            <img src="Imagens/linkIcon.png" alt="Adicionar link">
+                        </div>
+                        <button class="botaoPostar">Postar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="feed">
+            <article class="publicacaoImageContainer">
+                <div class="imagePostContainer">
+                    <img class="imagePost" src="Imagens/imagemPost.png" alt="Post no feed da Home">
+                </div>
+
+                <div class="descricaoPost">
+                    <div class="descricaoUsuario">
+                        <div class="fotoPerfilPequena"></div>
+                        <p class="nomeUsuario">@usuario</p>
+                    </div>
+
+                    <div class="interacoes">
+                        <img src="Imagens/comentarIcon.png" alt="Comentar">
+                        <img src="Imagens/likeIcon.png" alt="Curtir">
+                        <img src="Imagens/ameiIcon.png" alt="Amar">
+                    </div>
+                </div>
+
+                <div class="textoPost">
+                    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <nav class="menuNavegacao" aria-label="Navegação Principal">
+        <ul class="listaMenu">
+            <li>
+                <a href="home.html">
+                    <img src="Imagens/homeLogo.png" alt="Tela inicial">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="Imagens/notificacoesIcon.png" alt="Ver Notificações">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="Imagens/mensagemIcon.png" alt="Ver Mensagens">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="Imagens/configuracoesIcon.png" alt="Ver Configurações">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
